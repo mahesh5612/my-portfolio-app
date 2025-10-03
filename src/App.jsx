@@ -164,8 +164,8 @@ function App() {
             </div>
             <h3 style={{ marginTop: "36px" }}>Full Stack:</h3>
             <ul>
-              <li>HTML, CSS, Javascript</li>
-              <li>React, Docker, AWS</li>
+              <li>HTML, CSS</li>
+              <li>Javascript, React</li>
               <li>Java, Spring, JPA/Hibernate</li>
               <li>SQL</li>
               <li>Docker, AWS</li>

@@ -13,6 +13,11 @@ const counterClient = new Counter({
 function App() {
   const [count, setCount] = useState(0);
 
+  const startYear = 2007;
+  const currentYear = new Date().getFullYear();
+
+  const totalExperience = currentYear - startYear;
+
   const incrementCounter = async () => {
     try {
       const counter = await counterClient.up("mna-page-views");
@@ -51,10 +56,10 @@ function App() {
             }}
           />
           <div style={{ margin: "8px" }}>
-            I have extensive industry experience in web application development
-            using frontend, backend, databases, cloud & DevOps related
-            technologies majorly using monolithic, microservices and serverless
-            based architectures.
+            I have {totalExperience}+ years of extensive industry experience in
+            web application development using frontend, backend, databases,
+            cloud & DevOps related technologies majorly using monolithic,
+            microservices and serverless based architectures.
           </div>
         </div>
       </div>
@@ -71,14 +76,17 @@ function App() {
         <div
           style={{
             display: "flex",
-            justifyContent: "center",
-            gap: "16px"
+            justifyContent: "space-around",
+            gap: "16px",
+            maxWidth: "350px",
+            margin: "auto",
+            flexWrap: "wrap"
           }}
         >
           <Paper
             style={{
               padding: "8px",
-              width: "200px",
+              width: "130px",
               display: "flex",
               flexDirection: "column",
               position: "relative",
@@ -110,8 +118,8 @@ function App() {
           <Paper
             style={{
               padding: "8px",
-              width: "200px",
               display: "flex",
+              width: "130px",
               flexDirection: "column",
               position: "relative",
               backgroundColor: "lightgray"
@@ -132,9 +140,9 @@ function App() {
             </div>
             <h3 style={{ marginTop: "36px" }}>Backend:</h3>
             <ul>
-              <li>Java</li>
+              <li>Java, SQL</li>
               <li>Spring, JPA/Hibernate</li>
-              <li>SQL</li>
+              <li>Microservices</li>
               <li>Docker</li>
               <li>AWS</li>
             </ul>
@@ -142,8 +150,8 @@ function App() {
           <Paper
             style={{
               padding: "8px",
-              width: "200px",
               display: "flex",
+              width: "130px",
               flexDirection: "column",
               position: "relative",
               backgroundColor: "lightgray"
@@ -167,6 +175,7 @@ function App() {
               <li>HTML, CSS</li>
               <li>Javascript, React</li>
               <li>Java, Spring, JPA/Hibernate</li>
+              <li>Microservices</li>
               <li>SQL</li>
               <li>Docker, AWS</li>
             </ul>
@@ -189,23 +198,15 @@ function App() {
         <ul>
           <li>All the courses will be taught by me and covered online</li>
           <li>
+            Students will become interview and job-ready, if they sincerely
+            attend all the classes and practice regularly
+          </li>
+          <li>
             Classes will be conducted only on Saturdays and Sundays for 2 hours
             each day
           </li>
           <li>Course completion certificate will be provided online</li>
           <li>I will try to cover the courses in-depth as possible</li>
-          <li>
-            For frontend course, the maximum time limit to complete the course
-            is 3 Months
-          </li>
-          <li>
-            For backend course, the maximum time limit to complete the course is
-            3-4 Months
-          </li>
-          <li>
-            For full stack course, the maximum time limit to complete the course
-            is 6-7 Months
-          </li>
           <li>
             1:1 mentorship is possible as students can connect to me whenever
             required
